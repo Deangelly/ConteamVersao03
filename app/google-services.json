@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "893770830339",
+    "firebase_url": "https://appconteam-956aa.firebaseio.com",
+    "project_id": "appconteam-956aa",
+    "storage_bucket": "appconteam-956aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893770830339:android:3324dba14941ee2892b436",
+        "android_client_info": {
+          "package_name": "com.unasusam.conteam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893770830339-283qabf8gfonb7ntj02q1lvmhr6cg9l9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unasusam.conteam",
+            "certificate_hash": "19fd1a73b54e9f768524b8a2dbc7c4d3ca402468"
+          }
+        },
+        {
+          "client_id": "893770830339-br7njnadg6tg2mriruiun3vq01bdqfuh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1z92pVtwYaqWSr5V-huWInKQZut0Cod4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "893770830339-br7njnadg6tg2mriruiun3vq01bdqfuh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

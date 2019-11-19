@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lnl_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rltv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:layout_marginTop="8dp"
+        android:padding="6dp">
+
+       <ImageView
+           android:id="@+id/photo"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="16dp"
+           android:layout_marginBottom="16dp"
+           android:src="@drawable/login"/>
+
+        <TextView
+            android:id="@+id/apresentador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/photo"
+            android:fontFamily="@font/ps_medium"
+            android:text="@string/apresentador"
+            android:textColor="@color/green"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/nome_apresentador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/apresentador"
+            android:layout_alignStart="@id/apresentador"
+            android:fontFamily="@font/ps_black"
+            android:text="Fulano Ciclano de Tal"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Título:"
+            android:layout_below="@id/nome_apresentador"
+            android:layout_alignStart="@id/nome_apresentador"
+            android:fontFamily="@font/ps_medium"
+            android:textColor="@color/green"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/tema_apresentacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titulo"
+            android:layout_alignStart="@+id/nome_apresentador"
+            android:fontFamily="@font/ps_italic"
+            android:text="Introdução ao desenvolvimento"
+            android:textColor="@color/colorPrimaryDark" />
+    </RelativeLayout>
+
+</LinearLayout>
+

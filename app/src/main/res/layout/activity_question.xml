@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    android:orientation="vertical"
+    tools:context=".QuestionActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/ps_black"
+        android:text="Apresentador(a) "
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/nome_apresentador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deangelly Coitinho Figueiredo"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/ps_black"
+        android:text="Título "
+        android:textSize="20sp"
+        android:textColor="@color/white" />
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deangelly Coitinho Figueiredo"
+        android:textColor="@color/white"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/ps_black"
+        android:text="Critérios de Avaliação"
+        android:textColor="@color/white"
+        android:layout_marginTop="6dp"
+        android:textSize="20sp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="6dp"
+               android:background="@drawable/border">
+
+               <TextView
+                   android:id="@+id/question_1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="6dp"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginEnd="6dp"
+                   android:text="@string/questao_1"
+                   android:fontFamily="@font/ps_bold"
+                   android:textColor="@color/colorPrimaryDark" />
+
+               <TextView
+                   android:id="@+id/desc_1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="6dp"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginEnd="6dp"
+                   android:layout_below="@id/question_1"
+                   android:fontFamily="@font/ps_italic"
+                   android:text="O apresentador possui domínio do conteúdo?"
+                   android:textColor="@color/colorPrimaryDark" />
+
+
+               <TextView
+                   android:id="@+id/seek_text_1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="end"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:layout_alignParentEnd="true"
+                   android:padding="10dp"
+                   android:text="5"/>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                    android:layout_below="@id/desc_1"
+                   android:layout_centerInParent="true"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginEnd="6dp"
+                   android:layout_marginBottom="6dp">
+
+                   <SeekBar
+                       android:id="@+id/seek_bar_1"
+                       android:layout_width="300dp"
+                       android:layout_height="match_parent"
+                       android:max="10"
+                       android:progress="5" />
+
+               </LinearLayout>
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="6dp"
+               android:background="@drawable/border">
+
+               <TextView
+                   android:id="@+id/question_2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="6dp"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginEnd="6dp"
+                   android:fontFamily="@font/ps_bold"
+                   android:text="@string/questao_2"
+                   android:textColor="@color/colorPrimaryDark" />
+
+               <TextView
+                   android:id="@+id/desc_2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="6dp"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginEnd="6dp"
+                   android:layout_below="@id/question_2"
+                   android:fontFamily="@font/ps_italic"
+                   android:text="O apresentador conseguiu demonstrar a pesquisa de forma clara e objetiva?"
+                   android:textColor="@color/colorPrimaryDark" />
+
+
+               <TextView
+                   android:id="@+id/seek_text_2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="end"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:layout_alignParentEnd="true"
+                   android:padding="10dp"
+                   android:text="5"/>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/desc_2"
+                   android:layout_centerInParent="true"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginEnd="6dp"
+                   android:layout_marginBottom="6dp">
+
+                   <SeekBar
+                       android:id="@+id/seek_bar_2"
+                       android:layout_width="300dp"
+                       android:layout_height="match_parent"
+                       android:max="10"
+                       android:progress="5" />
+
+               </LinearLayout>
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="6dp"
+               android:background="@drawable/border">
+
+               <TextView
+                   android:id="@+id/question_3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="6dp"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginEnd="6dp"
+                   android:fontFamily="@font/ps_bold"
+                   android:text="@string/questao_3"
+                   android:textColor="@color/colorPrimaryDark" />
+
+               <TextView
+                   android:id="@+id/desc_3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="6dp"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginEnd="6dp"
+                   android:layout_below="@id/question_3"
+                   android:fontFamily="@font/ps_italic"
+                   android:text="Descreve o metódo utilizado na pesquisa de forma clara e concisa?"
+                   android:textColor="@color/colorPrimaryDark" />
+
+               <TextView
+                   android:id="@+id/seek_text_3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="end"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:layout_alignParentEnd="true"
+                   android:padding="10dp"
+                   android:text="5"/>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/desc_3"
+                   android:layout_centerInParent="true"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginEnd="6dp"
+                   android:layout_marginBottom="6dp">
+
+                   <SeekBar
+                       android:id="@+id/seek_bar_3"
+                       android:layout_width="300dp"
+                       android:layout_height="match_parent"
+                       android:max="10"
+                       android:progress="5" />
+
+               </LinearLayout>
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="6dp"
+               android:background="@drawable/border">
+
+               <TextView
+                   android:id="@+id/question_4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="6dp"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginEnd="6dp"
+                   android:fontFamily="@font/ps_bold"
+                   android:text="@string/questao_4"
+                   android:textColor="@color/colorPrimaryDark" />
+
+
+               <TextView
+                   android:id="@+id/desc_4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="6dp"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginEnd="6dp"
+                   android:layout_below="@id/question_4"
+                   android:fontFamily="@font/ps_italic"
+                   android:text="O apresentador possui conhecimento suficiente?"
+                   android:textColor="@color/colorPrimaryDark" />
+               <TextView
+                   android:id="@+id/seek_text_4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="end"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:layout_alignParentEnd="true"
+                   android:padding="10dp"
+                   android:text="5"/>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/desc_4"
+                   android:layout_centerInParent="true"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginEnd="6dp"
+                   android:layout_marginBottom="6dp">
+
+                   <SeekBar
+                       android:id="@+id/seek_bar_4"
+                       android:layout_width="300dp"
+                       android:layout_height="match_parent"
+                       android:max="10"
+                       android:progress="5" />
+
+               </LinearLayout>
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="6dp"
+               android:background="@drawable/border">
+
+               <TextView
+                   android:id="@+id/question_5"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="6dp"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginEnd="6dp"
+                   android:text="@string/questao_5"
+                   android:textColor="@color/colorPrimaryDark" />
+
+               <TextView
+                   android:id="@+id/desc_5"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="6dp"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginEnd="6dp"
+                   android:layout_below="@id/question_5"
+                   android:fontFamily="@font/ps_italic"
+                   android:text="Apresentação dentro do horário estimado de 10min?"
+                   android:textColor="@color/colorPrimaryDark" />
+               <TextView
+                   android:id="@+id/seek_text_5"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="end"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:layout_alignParentEnd="true"
+                   android:padding="10dp"
+                   android:text="5"/>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/desc_5"
+                   android:layout_centerInParent="true"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginEnd="6dp"
+                   android:layout_marginBottom="6dp">
+
+                   <SeekBar
+                       android:id="@+id/seek_bar_5"
+                       android:layout_width="300dp"
+                       android:layout_height="match_parent"
+                       android:max="10"
+                       android:progress="5" />
+
+               </LinearLayout>
+           </RelativeLayout>
+
+
+       </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

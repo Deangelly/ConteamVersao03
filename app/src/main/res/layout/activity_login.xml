@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background2">
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_centerInParent="true"
+            android:background="@color/background">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/informe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:gravity="center"
+                android:text="@string/informe_os_dados_abaixo_para_efetuar_o_seu_login"
+                android:textColor="@color/white" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/informe">
+                <ImageView
+                    android:id="@+id/user"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/user"
+                    android:tint="@color/white"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="8dp"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/user"
+                    android:layout_alignBottom="@id/user"
+                    android:layout_marginLeft="8dp"
+                    android:hint="@string/e_mail"
+                    android:orientation="horizontal"
+                    android:textColorHint="@color/white"
+                    android:textSize="16sp"
+                    app:boxStrokeColor="@color/white"
+                    app:boxStrokeWidth="1dp"
+                    app:hintTextAppearance="@style/Text_input">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="36.5dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/custom_input_login"
+                        android:fontFamily="@font/ps_bold"
+                        android:textColor="@color/white"
+                        android:padding="8dp"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <ImageView
+                    android:id="@+id/pass"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/key"
+                    android:tint="@color/white"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_below="@id/user"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/pass"
+                    android:layout_alignBottom="@id/pass"
+                    android:layout_marginLeft="8dp"
+                    android:hint="@string/senha"
+                    android:orientation="horizontal"
+                    android:textColorHint="@color/white"
+                    android:textSize="16sp"
+                    app:boxStrokeColor="@color/white"
+                    app:boxStrokeWidth="1dp"
+                    app:hintTextAppearance="@style/Text_input">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="36.5dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/custom_input_login"
+                        android:fontFamily="@font/ps_bold"
+                        android:textColor="@color/white"
+                        android:padding="8dp"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/butao_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pass"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:text="@string/enviar"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
